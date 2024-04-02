@@ -1,3 +1,5 @@
+
+from django.core.management.utils import get_random_secret_key
 import os
 import sys
 
@@ -23,7 +25,7 @@ SITE_ID=1
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -77,7 +79,9 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "8s)l4^2s&&0*31-)+6lethmfy3#r1egh^6y^=b9@g!q63r649_"
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+
+WSGI_APPLICATION = 'app.wsgi.application'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
