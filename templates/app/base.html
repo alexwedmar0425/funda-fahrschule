@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        {% load django_bootstrap5 %}
+        {% load bootstrap_icons %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="static/css/main.css" rel="stylesheet">
+        <link href="static/css/carousel.css" rel="stylesheet">
+    </head>
+    <body>
+        {% block bootstrap5_content %}
+            {% block content %}
+            {% endblock %}
+        {% endblock %}
+    </body>
+</html>

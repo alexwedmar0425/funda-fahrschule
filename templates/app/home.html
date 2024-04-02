@@ -1,0 +1,74 @@
+{% extends 'app/base.html' %}
+
+{% load django_bootstrap5 %}
+{% load bootstrap_icons %}
+
+{% block title %}Funda fahrschule{% endblock %}
+
+{% block content %}
+    {% include "app/common/header.html" %}
+
+    <main>
+        {% include "app/common/carousel.html" %}
+
+  <div class="container marketing">
+      {% include "app/partials/features.html" %}
+      {% include "app/partials/happy-customers.html" %}
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text-center">Kompetente Ausbildung<br /> in den <span class="text-muted">Klassen A, B, C und Anhänger Klassen.</span></h2>
+        <p class="lead">Jetzt neu B196, B197.</p>
+        <p class="lead">Jetzt neu C/CE auch mit Bildungsgutschein möglich, sowie Kurierfahrer mit B/BE.</p>
+        <p class="lead">Schlüsselzahl 196 (B196) Ab sofort hast du die Erlaubnis Leichtkrafträder bis 125 ccm und einer Motorleistung von max. 11 kW zu fahren. Das Verhältnis Leistung/Gewicht darf 0,1 kW/kg nicht übersteigen. Nur im Inland.</p>
+        <p class="lead">Schlüsselzahl 197 (B197) Du darfst uneingeschränkt Autos mit Handschaltgetriebe und Automatikgetriebe im Inland und Ausland fahren. Deine Fahrausbildung und Prüfung findet auf einem Auto mit Automatikgetriebe statt.</p>
+      </div>
+      <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="static/img/Image-2020-02-11.jpg" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Rufen Sie uns <span class="text-muted">jetzt an!</span></h2>
+        <p class="lead">​Mit Spaß durch die Führerscheinausbildung.</p>
+          <p class="lead"><a href="tel:+4903052646003">+49 (0) 30 526 46 003</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="static/img/do-not-be-like-penguin.jpeg">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+{% endblock %}

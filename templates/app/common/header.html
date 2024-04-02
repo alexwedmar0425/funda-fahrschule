@@ -1,0 +1,42 @@
+{% load bootstrap_icons %}
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <div class="header logo">
+            <img src="static/img/funda-logo.png" alt="">
+        </div>
+      <a class="navbar-brand" href="#">Funda fahrschule</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse main-color" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0 d-inline-flex ms-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ausbildung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theorie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:03052646003" tabindex="-1" >{% bs_icon 'phone' %} 030 / 526 46 003</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
