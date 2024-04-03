@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide carousel-underline" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide carousel-underline" data-bs-ride="carousel" data-bs-interval="10000">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -6,7 +6,9 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="transform" src="static/img/front-side-school.jpg">
+        <div class="elementor-background-video-container">
+            <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://fahrlehrerlukas.com/wp-content/uploads/2024/03/Fl-Folieren-Reel-2.mp4"></video>
+        </div>
 
         <div class="container">
           <div class="carousel-caption text-start">
@@ -15,8 +17,9 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
-          <img class="bd-placeholder-img" src="static/img/action-adult-blur-car-scaled.jpg">
+          <img class="bd-placeholder-img carousel-img__cover" src="static/img/action-adult-blur-car-scaled.jpg">
 
         <div class="container">
           <div class="carousel-caption">
@@ -27,7 +30,7 @@
         </div>
       </div>
       <div class="carousel-item">
-          <img class="bd-placeholder-img" src="static/img/front-side-school-mercedes.jpg">
+          <img class="bd-placeholder-img carousel-img__cover" src="static/img/front-side-school-mercedes.jpg">
 
         <div class="container">
           <div class="carousel-caption text-end">
