@@ -75,7 +75,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_files')]
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    "compressor.finders.CompressorFinder",
 )
 
 # Make this unique, and don't share it with anybody.
@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     "django.contrib.admin",
     "django_bootstrap5",
     "django_bootstrap_icons",
+    "compressor",
     "app",
 )
 
@@ -153,3 +154,5 @@ BOOTSTRAP5 = {
     "required_css_class": "django_bootstrap5-required",
     "javascript_in_head": True,
 }
+
+COMPRESS_ENABLED = True
