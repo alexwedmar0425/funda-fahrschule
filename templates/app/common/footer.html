@@ -1,0 +1,39 @@
+{% load django_bootstrap5 %}
+{% load bootstrap_icons %}
+
+<footer class="bg-dark py-5">
+    <div class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="main-color">Öffungszeiten</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 color-white">MO-FR 12:00 – 18:00</li>
+            </ul>
+          </div>
+
+          <div class="col-7 col-md-2 mb-3">
+            <h5 class="main-color">Rufe uns an</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0" href="tel:+4903052646003" tabindex="-1" >+49 030 526 46 003</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0" href="tel:+49017670027433" tabindex="-1" >+49 0176 700 27 433</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="main-color">Besuche uns</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 color-white">Rauchstr. 28 13587 Berlin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Fahrschule Funda, GmbH. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis img-media-size" target="_blank" href="https://www.instagram.com/fahrschule_funda?igsh=YXkwemlzc3Vrc3kw">{% bs_icon 'instagram' %}</a></li>
+            <li class="ms-3"><a class="link-body-emphasis img-media-size" target="_blank" href="https://www.facebook.com/profile.php?id=100063634386995">{% bs_icon 'facebook' %}</a></li>
+          </ul>
+        </div>
+    </div>
+</footer>
