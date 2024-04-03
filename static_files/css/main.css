@@ -124,3 +124,15 @@ a:hover { color: #3FB7B4; }
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+
+.fu-google-map-frame {
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    .fu-google-map-frame {
+        width: 390px;
+        height: 390px;
+    }
+}

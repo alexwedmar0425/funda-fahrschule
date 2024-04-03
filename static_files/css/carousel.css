@@ -15,6 +15,11 @@
 .carousel-item {
   height: 55rem;
 }
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 19rem;
+  }
+}
 .carousel-item > img {
   position: absolute;
   top: 0;
