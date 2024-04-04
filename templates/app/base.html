@@ -1,5 +1,6 @@
 {% load static %}
 {% load compress %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,6 +22,7 @@
         {% block bootstrap5_content %}
             {% block content %}
             {% endblock %}
+            {% include "app/partials/go-up-button.html" %}
         {% endblock %}
     </body>
 </html>
